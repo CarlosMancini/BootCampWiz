@@ -1,0 +1,9 @@
+.row {
+  margin: 7px 9px;
+  width: 26%;
+}
+.row input,
+.row select {
+  width: 150px;
+  float: right;
+}

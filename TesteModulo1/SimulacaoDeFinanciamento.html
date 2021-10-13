@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head lang="pt-BR">
+    <title>Simulação de financiamento</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="EstilizacaoFinanciamento.css">
+</head>
+<body>
+    <h2>Simulação de financiamento</h2>
+    <div class="row">
+        <label for="valor-financiamento">Valor do Financiamento</label>
+        <input id="valor-financiamento" type="number" value=200000 />
+    </div>
+    <div class="row">
+        <label for="prazo">Prazo em anos</label>
+        <input id="prazo" type="number" value=20 />
+    </div>
+    <div class="row">
+        <label for="juros-ano">Juros ao ano</label>
+        <input id="juros-ano" type="number" value=0.08 />
+    </div>
+    <button type="button" onclick="simula()">Simular</button>
+    <h2>Resultado do financiamento</h2>
+    <div class="row">
+        <label for="prazo-mes">Prazo em meses</label>
+        <input readonly name="prazo-mes" id="prazo-mes" />
+    </div>
+    <div class="row">
+        <label for="juros-mes">Juros ao mês</label>
+        <input readonly name="juros-mes" id="juros-mes" />
+    </div>
+    <div class="row">
+        <label for="juros-acumulados">Juros acumulados</label>
+        <input readonly name="juros-acumulados" id="juros-acumulados" />
+    </div>
+    <div id="scoreboard">
+    <table>
+        <thead>
+            <tr>
+                <th>Parcela</th>
+                <th>Amortização</th>
+                <th>Juros</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td id="amortizacao" name="amortizacao"></td>
+                <td name="juros"></td>
+                <td name="total"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td id="amortizacao" name="amortizacao"></td>
+                <td name="juros"></td>
+                <td name="total"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td id="amortizacao" name="amortizacao"></td>
+                <td name="juros"></td>
+                <td name="total"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td id="amortizacao" name="amortizacao"></td>
+                <td name="juros"></td>
+                <td name="total"></td>
+            <tr>
+                <td>5</td>
+                <td id="amortizacao" name="amortizacao"></td>
+                <td name="juros"></td>
+                <td name="total"></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <script src="ScriptFinanciamento.js"></script>
+</body>
